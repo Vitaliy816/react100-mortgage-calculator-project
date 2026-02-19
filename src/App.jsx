@@ -1,14 +1,12 @@
-import './App.css'
+import "./App.css";
+import MortgageCalculator from "./MortgageCalculator";
 
 function App() {
-  // Add your code here
-  
   return (
     <>
-      {/* Add your code here */}
-
+      <MortgageCalculator />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

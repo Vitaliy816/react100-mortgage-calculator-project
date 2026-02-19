@@ -1,1 +1,116 @@
-/* Add your custom css here */
+body {
+  background: linear-gradient(#710085, #015493);
+  padding-top: 50px;
+}
+
+.mortgageCalculator {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 75px;
+  text-shadow:
+    black 5px 5px 10px,
+    black 0 0 50px,
+    black 0 0 10px;
+}
+
+.formHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.formFieldLabel {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.formFieldInput,
+.formFieldSelect {
+  background-color: rgba(87, 178, 213, 0.5);
+  font-size: 1.2em;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 20px;
+  text-align: center;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.calculateButton {
+  background-color: rgb(94, 205, 124);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 150px;
+  height: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+}
+
+.calculateButton:hover {
+  background-color: rgb(37, 80, 48);
+}
+
+.calculateButton:active {
+  animation: press 160ms ease;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.resultHolder {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.resultText {
+  font-size: 1.2em;
+  color: white;
+}
+
+.resultAmount {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(94, 205, 124);
+}
